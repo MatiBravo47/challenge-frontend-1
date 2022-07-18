@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<style>
+  /* en dispositivos >992 px  */
+  @media (min-width: 992px){
+    .alto-100 {
+      height :100vh;
+    }
+  }
+</style>
+</head>
+<body>
+  <!-- contenido principal -->
+  <!-- flexbox para centrarlo vertical y horizontalmente -->
+  <!-- verticalmente: "align-items-center" -->
+  <!-- horizontalmente:justify-content-center -->
+  <!-- no se nota ningun cambio porque flexbox para posicionar verticalmente necesita un alto en especifico(detectar el alto del dispositivo en el que se esta visualizando la pagina ) -->
+  <!-- vh-100 para tomer el 100% del alto de la pagina para aplicar el flex -->
+  <!-- en pantalla chicas vh-100 causa problemas entonces se personaliza la misma funcion con @media arriba  -->
+  <main class="container d-flex align-items-center justify-content-center alto-100">
+    <!-- fila -->
+    <div class="row">
+      <!-- columna izquierda -->
+      <div class="col-12 col-lg-9">
+        <div class="row">
+          <div class="col-12 col-lg-8 p-2">
+            <!-- h-100 usa el alto de todo el div  -->
+            <article class="card h-100 bg-primary">
+              <div class="card-body">
+                <!-- para que los elementos se posicionen uno al lado del otro uso flex -->
+                <!-- margin botton  -->
+                <div class="d-flex mb-3">
+                  <img src="./images/image-daniel.jpg" alt="" class="border border-secondary border-3 rounded-circle">
+                  <!-- ps=padding izquierdo  -->
+                  <!-- se puede usar breakpoints como los grid por ejemplo:ps-lg-3  -->
+                  <div class="ps-3">
+                    <!-- m= margen -->
+                    <h6 class="m-0 h6">Daniel Clifford</h6>
+                    <p class="m-0 h6">Lorem, ipsum.</p>
+                  </div>
+                </div>
+                <div>
+                  <p class="h6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, vero adipisci. Quasi quae excepturi accusamus qui est necessitatibus, dolor perferendis esse doloribus eius. Atque incidunt omnis debitis blanditiis quae quasi.</p>
+                  <p class="fs-s lh-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ratione ipsam dolorem, velit magni praesentium assumenda provident, iusto, sapiente dolor quos vero quam! Sapiente qui omnis assumenda eum accusantium amet!</p>
+                </div>
+              </div>
+
+            </article>
+          </div>
+          <div class="col-12 col-lg-4 p-2 ">
+            <article class="card h-100 bg-success">
+              <div class="card-body">
+                <!-- para que los elementos se posicionen uno al lado del otro uso flex -->
+                <div class="d-flex mb-3">
+                  <img src="./images/image-jeanette.jpg" alt="" class="border border-secondary border-3 rounded-circle">
+                  <!-- ps=padding izquierdo  -->
+                  <!-- se puede usar breakpoints como los grid por ejemplo:ps-lg-3  -->
+                  <div class="ps-3">
+                    <!-- m= margen -->
+                    <h6 class="m-0 h6">Daniel Clifford</h6>
+                    <p class="m-0 h6">Lorem, ipsum.</p>
+                  </div>
+                </div>
+                <div>
+                  <p class="fs-s lh-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ratione ipsam dolorem, velit magni praesentium assumenda provident, iusto, sapiente dolor quos vero quam! Sapiente qui omnis assumenda eum accusantium amet!</p>
+                </div>
+              </div>
+
+            </article>
+          </div>
+          <div class="col-12 col-lg-4 p-2 ">
+            <article class="card h-100 bg-danger">
+              <div class="card-body">
+                <!-- para que los elementos se posicionen uno al lado del otro uso flex -->
+                <div class="d-flex mb-3">
+                  <img src="./images/image-jonathan.jpg" alt="" class="border border-secondary border-3 rounded-circle">
+                  <!-- ps=padding izquierdo  -->
+                  <!-- se puede usar breakpoints como los grid por ejemplo:ps-lg-3  -->
+                  <div class="ps-3">
+                    <!-- m= margen -->
+                    <h6 class="m-0 h6">Daniel Clifford</h6>
+                    <p class="m-0 h6">Lorem, ipsum.</p>
+                  </div>
+                </div>
+                <div>
+                  <p class="fs-s lh-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ratione ipsam dolorem, velit magni praesentium assumenda provident, iusto, sapiente dolor quos vero quam! Sapiente qui omnis assumenda eum accusantium amet!</p>
+                </div>
+              </div>
+
+            </article>
+          </div>
+          <div class="col-12 col-lg-8 p-2">
+            <article class="card h-100 bg-warning">
+              <div class="card-body">
+                <!-- para que los elementos se posicionen uno al lado del otro uso flex -->
+                <div class="d-flex mb-3">
+                  <img src="./images/image-kira.jpg" alt="" class="border border-secondary border-3 rounded-circle">
+                  <!-- ps=padding izquierdo  -->
+                  <!-- se puede usar breakpoints como los grid por ejemplo:ps-lg-3  -->
+                  <div class="ps-3">
+                    <!-- m= margen -->
+                    <h6 class="m-0 h6">Daniel Clifford</h6>
+                    <p class="m-0 h6">Lorem, ipsum.</p>
+                  </div>
+                </div>
+                <div>
+                  <p class="h6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, vero adipisci. Quasi quae excepturi accusamus qui est necessitatibus, dolor perferendis esse doloribus eius. Atque incidunt omnis debitis blanditiis quae quasi.</p>
+                  <p class="fs-s lh-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ratione ipsam dolorem, velit magni praesentium assumenda provident, iusto, sapiente dolor quos vero quam! Sapiente qui omnis assumenda eum accusantium amet!</p>
+                </div>
+              </div>
+
+            </article>
+          </div>
+      </div>
+    </div>
+    <!-- columna derecha -->
+    <div class="col-12 col-lg-3 p-2">
+      <article class="card h-100 bg-secondary">
+        <div class="card-body">
+          <!-- para que los elementos se posicionen uno al lado del otro uso flex -->
+          <div class="d-flex mb-3">
+            <img src="./images/image-patrick.jpg" alt="" class="border border-secondary border-3 rounded-circle">
+            <!-- ps=padding izquierdo  -->
+            <!-- se puede usar breakpoints como los grid por ejemplo:ps-lg-3  -->
+            <div class="ps-3">
+              <!-- m= margen -->
+              <h6 class="m-0 h6">Daniel Clifford</h6>
+              <p class="m-0 h6">Lorem, ipsum.</p>
+            </div>
+          </div>
+          <div>
+            <p class="h6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, vero adipisci. Quasi quae excepturi accusamus qui est necessitatibus, dolor perferendis esse doloribus eius. Atque incidunt omnis debitis blanditiis quae quasi.</p>
+            <p class="fs-s lh-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ratione ipsam dolorem, velit magni praesentium assumenda provident, iusto, sapiente dolor quos vero quam! Sapiente qui omnis assumenda eum accusantium amet!</p>
+          </div>
+        </div>
+
+      </article> 
+    </div>
+  </main>
+</body>
+</html>
