@@ -5,17 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- importante colocar el vinculo a google fonts sobre custom.css ya que se va a usar en el mismo  -->
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,600;0,900;1,100;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/custom.css">
   <title>Frontend Mentor | [Challenge Name Here]</title>
+  
   <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<style>
+  <style>
   /* en dispositivos >992 px  */
-  @media (min-width: 992px){
-    .alto-100 {
-      height :100vh;
-    }
-  }
+  
 </style>
 </head>
 <body>
@@ -34,7 +36,7 @@
         <div class="row">
           <div class="col-12 col-lg-8 p-2">
             <!-- h-100 usa el alto de todo el div  -->
-            <article class="card h-100 bg-primary">
+            <article class="card h-100 bg-primary text-white fondo-card shadow-sm">
               <div class="card-body">
                 <!-- para que los elementos se posicionen uno al lado del otro uso flex -->
                 <!-- margin botton  -->
@@ -57,7 +59,7 @@
             </article>
           </div>
           <div class="col-12 col-lg-4 p-2 ">
-            <article class="card h-100 bg-success">
+            <article class="card h-100 bg-success text-white shadow-sm">
               <div class="card-body">
                 <!-- para que los elementos se posicionen uno al lado del otro uso flex -->
                 <div class="d-flex mb-3">
@@ -78,7 +80,7 @@
             </article>
           </div>
           <div class="col-12 col-lg-4 p-2 ">
-            <article class="card h-100 bg-danger">
+            <article class="card h-100 bg-secondary shadow-sm">
               <div class="card-body">
                 <!-- para que los elementos se posicionen uno al lado del otro uso flex -->
                 <div class="d-flex mb-3">
@@ -99,7 +101,7 @@
             </article>
           </div>
           <div class="col-12 col-lg-8 p-2">
-            <article class="card h-100 bg-warning">
+            <article class="card h-100 bg-dark text-white shadow-sm">
               <div class="card-body">
                 <!-- para que los elementos se posicionen uno al lado del otro uso flex -->
                 <div class="d-flex mb-3">
@@ -124,7 +126,7 @@
     </div>
     <!-- columna derecha -->
     <div class="col-12 col-lg-3 p-2">
-      <article class="card h-100 bg-secondary">
+      <article class="card h-100 bg-secondary shadow-sm">
         <div class="card-body">
           <!-- para que los elementos se posicionen uno al lado del otro uso flex -->
           <div class="d-flex mb-3">

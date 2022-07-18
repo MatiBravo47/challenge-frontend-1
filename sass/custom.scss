@@ -1,0 +1,38 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+// en bootstraps 5 se pueden usar las variables (variables.scss)de sass y ser reemplazas 
+// siempre observando que este watching funcionando 
+$font-family-sans-serif: 'Barlow Semi Condensed', sans-serif;
+$primary:#733fc8;
+$success:#49556b;
+$dark:#18202d;
+$secondary:#EDF2F8;
+@media (min-width: 992px){
+    .alto-100 {
+    height :100vh;
+    }
+}
+.d-flex img {
+    width: 50px;
+}
+.fondo-card {
+    background-image: url('../images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: 85% top;
+}
+// en lg se mantiene en 960px
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 960px,
+  xxl: 960px
+);
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here

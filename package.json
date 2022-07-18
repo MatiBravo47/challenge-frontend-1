@@ -1,0 +1,23 @@
+{
+  "name": "testimonials-grid-section-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Testimonials grid section coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "build": "purgecss --css css/custom.css --content index.html -o css/reducido.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatiBravo47/challengeFrontend-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatiBravo47/challengeFrontend-1/issues"
+  },
+  "homepage": "https://github.com/MatiBravo47/challengeFrontend-1#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1"
+  }
+}
